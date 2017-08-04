@@ -1,0 +1,183 @@
+@import url(normalize.css);
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+
+* {
+	/* background-color: #eeeeee; */
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+body {
+	background-color: #eeeeee;
+}
+        /* ------.container ------*/
+.container {
+	padding: 0 16px;
+	margin: 50px auto 0;
+	max-width: 1230px; 
+	font-size: 0;
+}
+ 		/* ------.container ------*/
+ 		
+		/* ------ header ------*/
+.main-vav {
+	width: 100%;
+	display: inline-block;
+	font-size: 0;
+}
+a.logo {
+	display: inline-block;
+	width: 25%;
+	font-family: 'Roboto', sans-serif;
+    color:  #303030;
+	font-size: 48px; /*3em*/
+	font-weight: 900;
+	line-height: 52px;/*3.25em*/
+	text-align: left;
+	letter-spacing: 0.025em;
+	vertical-align: middle;
+}
+.logo span {
+	padding-left: 6px; /*0.375em*/
+}
+ul.menu {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	width: 75%;
+	list-style: none;
+	text-align: right;
+	font-size: 0;
+	vertical-align: middle;
+}
+ul.menu li {
+	display: inline-block;
+	padding-right: 40px; /*2.5em*/
+	font-family: Roboto;
+	color:  #303030;
+	font-size: 18px; /*1.125em*/
+	letter-spacing: 0.025em;
+	font-weight: 400;
+	line-height: 27px; /*1.75em*/
+	text-align: left;
+}
+ul.menu li:last-child {
+	padding-right: 0;
+}
+
+
+/* ------ header ------*/
+
+/* ------ main ------- */
+.slider {
+	margin-top: 100px;
+	/* margin-bottom: 100px; */
+	
+}
+.slider-content {
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+	position: relative;
+	z-index: 100;
+}
+.slider-image {
+	display: inline-block;
+	width: 50%;
+	padding: 0 76px;
+	vertical-align: top;
+	position: relative;
+	z-index: 100;
+}
+h1.title {
+	margin: 0;
+	padding-bottom: 20px;
+	font-family: Raleway;
+	color:  #303030;
+	font-size: 150px;
+	font-weight: 900;
+	line-height: 150px;
+	text-align: right;
+	text-transform: uppercase;
+}
+.slider-content p {
+	max-height: 100px;
+	padding-left: 42px;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	color:  #303030;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 36px;
+	text-align: right;
+    overflow-y:auto;
+    white-space: pre-wrap;
+}
+.slider::after {
+	content: "";
+  	position: absolute;
+  	left: 498px;
+  	top: 0px;
+  	width: 947px;
+  	height: 852px;
+  	content: "";
+    background-image: url("../img/bg-gradient.png");
+  	z-index: 10;
+/*   	border: 1px solid black; */
+}
+a.project {
+	display: block;
+	margin-top: 20px;
+	text-decoration: none;
+	text-align: right;
+}
+.project span {
+	color: #e10011;
+    font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 36px;
+	
+}
+.slider-nav {
+	padding: 0;
+	margin-top: 64px;
+	margin-bottom: 100px;
+    list-style: none;
+    text-align: center;
+}
+ul.slider-nav li {
+	display: inline-block;
+	font-size: 13px;
+}
+.slider-nav button {
+	position: relative;
+	width: 11px;
+    height: 11px;
+    padding: 0;
+    border-radius: 50px;
+    border: none;
+    background-color: #303030;
+}
+.slider-nav li:nth-child(2) button {
+	margin: 0 14px;
+}
+.slider-nav button span {
+	visibility: hidden;
+	position: absolute;
+	
+}
+.slider-nav button.active {
+	background-color: #e10011;
+}
+
+.slider-nav button:hover {
+	cursor: pointer;
+	background-color: #FFF;
+	transition: all .3s ease;
+}
+
+
+
+
