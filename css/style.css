@@ -11,18 +11,24 @@
 body {
 	background-color: #eeeeee;
 }
+a {
+	text-decoration: none;
+}
         /* ------.container ------*/
 .container {
 	padding: 0 16px;
-	margin: 50px auto 0;
+	margin: 0 auto;
+	/* margin: 50px auto 0; */
 	max-width: 1230px; 
 	font-size: 0;
 }
  		/* ------.container ------*/
  		
 		/* ------ header ------*/
-.main-vav {
+.main-nav {
 	width: 100%;
+	padding-top: 50px;
+	margin-bottom: 100px;
 	display: inline-block;
 	font-size: 0;
 }
@@ -37,6 +43,11 @@ a.logo {
 	text-align: left;
 	letter-spacing: 0.025em;
 	vertical-align: middle;
+}
+a.logo:hover span {
+	color: rgba(48, 48, 48, 0.3);
+	cursor: pointer;
+	transition: all .3s ease;
 }
 .logo span {
 	padding-left: 6px; /*0.375em*/
@@ -53,28 +64,43 @@ ul.menu {
 }
 ul.menu li {
 	display: inline-block;
-	padding-right: 40px; /*2.5em*/
+	padding-right: 40px; 
 	font-family: Roboto;
-	color:  #303030;
-	font-size: 18px; /*1.125em*/
+	font-size: 18px;
 	letter-spacing: 0.025em;
 	font-weight: 400;
-	line-height: 27px; /*1.75em*/
+	line-height: 27px; 
 	text-align: left;
 }
 ul.menu li:last-child {
 	padding-right: 0;
 }
-
-
+.menu a {
+	display: inline-block;
+	color:  #303030;
+}
+ul.menu li:hover a {
+	color: rgba(48, 48, 48, 0.5);
+	cursor: pointer;
+	transition: all .3s ease;
+}
+button {
+	padding: 0;
+	border: none;
+    background-color: transparent;
+    color: #303030;
+    cursor: pointer;
+    outline: none;
+}
+button:hover i {
+	color: rgba(48, 48, 48, 0.5);
+	transition: all .3s ease;
+	cursor: pointer;
+}
 /* ------ header ------*/
 
 /* ------ main ------- */
-.slider {
-	margin-top: 100px;
-	/* margin-bottom: 100px; */
-	
-}
+
 .slider-content {
 	display: inline-block;
 	width: 50%;
@@ -104,7 +130,7 @@ h1.title {
 .slider-content p {
 	max-height: 100px;
 	padding-left: 42px;
-	margin: 0;
+	margin: 0 0 20px 0;
 	font-family: 'Roboto', sans-serif;
 	color:  #303030;
 	font-size: 24px;
@@ -123,12 +149,11 @@ h1.title {
   	height: 852px;
   	content: "";
     background-image: url("../img/bg-gradient.png");
-  	z-index: 10;
+  	z-index: -1;
 }
 a.project {
 	display: block;
-	margin-top: 20px;
-	text-decoration: none;
+	/* margin-top: 20px; */
 	text-align: right;
 	color: #e10011;
     font-family: 'Roboto', sans-serif;
@@ -136,14 +161,18 @@ a.project {
 	font-weight: 700;
 	line-height: 36px;	
 }
- .slider-content a:hover {
-	color: #FFF;
-	transition: all .3s ease;
-	
+
+ .slider-content a:hover span {
+	color: rgba(225, 0, 17, 0.5);
+	cursor: pointer;
+	transition: all .3s ease;	
+}
+.slider-image {
+	margin-bottom: 64px;
 }
 .slider-nav {
 	padding: 0;
-	margin-top: 64px;
+/* 	margin-top: 64px; */
 	margin-bottom: 100px;
     list-style: none;
     text-align: center;
@@ -169,14 +198,13 @@ ul.slider-nav li {
 	position: absolute;
 	
 }
-.slider-nav button.active {
-	background-color: #e10011;
-}
-
 .slider-nav button:hover {
 	cursor: pointer;
-	background-color: #FFF;
+	background-color: rgba(48, 48, 48, 0.5);
 	transition: all .3s ease;
+}
+.slider-nav button.active {
+	background-color: #e10011;
 }
 
 
