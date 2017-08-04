@@ -124,20 +124,21 @@ h1.title {
   	content: "";
     background-image: url("../img/bg-gradient.png");
   	z-index: 10;
-/*   	border: 1px solid black; */
 }
 a.project {
 	display: block;
 	margin-top: 20px;
 	text-decoration: none;
 	text-align: right;
-}
-.project span {
 	color: #e10011;
     font-family: 'Roboto', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
-	line-height: 36px;
+	line-height: 36px;	
+}
+ .slider-content a:hover {
+	color: #FFF;
+	transition: all .3s ease;
 	
 }
 .slider-nav {
@@ -177,7 +178,6 @@ ul.slider-nav li {
 	background-color: #FFF;
 	transition: all .3s ease;
 }
-
 
 
 
