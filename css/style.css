@@ -114,7 +114,10 @@ button:hover i {
 	padding: 0 76px;
 	vertical-align: top;
 	position: relative;
-	z-index: 100;
+	text-align: center;
+}
+.slider-image img {
+	max-width: 100%;
 }
 h1.title {
 	margin: 0;
