@@ -241,8 +241,8 @@ ul.slider-nav li {
 }
 .features__item {
 	max-width: 100%;
-	max-height: 60%;
-	opacity: 0;     /* !!!!!!! */
+	max-height: 100%;
+	opacity: 0;     
 }
 
 .features__item--wrap {
@@ -281,9 +281,10 @@ ul.slider-nav li {
 }
 .features__item--wrap--hover {
 	display: none; 
+	position: relative;
 	color: #ffffff;        
 	padding-left: 36px;
-	padding-bottom: 42px;
+	bottom: 120px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 30px;
 	font-weight: 900;
@@ -291,7 +292,7 @@ ul.slider-nav li {
 .features__item--hover--underline {
 	padding-bottom: 10px;
 	border-bottom: 5px solid #FFF;
-} 
+}  
 .features__item--wrap:hover  .features__item--wrap--hover {
 	display: block;
 	transition: all .5s ease;
@@ -336,11 +337,14 @@ ul.slider-nav li {
     left: 38px;
 }
 .contacts__subscribe--form--right {
-	position: absolute;
+	/* position: absolute; */
+	position: relative;
+	left: 500px;
+    bottom: 70px;
     width: 208px;
     height: 70px;
-    right: 0;
-    bottom: 0;
+   /*  right: 0;
+    bottom: 0; */
     border-radius: 0 35px 35px 0;
     color: #ffffff;
 	font-size: 18px;
@@ -351,14 +355,26 @@ ul.slider-nav li {
     outline: none;
     background-color: #e10011;
 }
-.contacts__subscribe--form--submit {
+/* .contacts__subscribe--form--submit {
 	color: #ffffff;
 	font-size: 18px;
 	font-weight: 400;
     position: absolute;
     top: 45px;
-    right: 38px;
- }
+    right: 30px;
+ } */
+ .contacts__subscribe--form--submit {
+ 	color: #ffffff;
+    /* display: block; */
+    font-size: 18px;
+    font-weight: 400;
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    width: 208px;
+    height: 70px;
+    padding: 25px 0 0 155px;
+}
 .contacts__subscribe--form--left:hover {
 	cursor: pointer;
 	background-color: rgba(48, 48, 48, 0.1);
@@ -373,7 +389,11 @@ ul.slider-nav li {
 	background-color: #ffffff;
 	color: #e10011;
 	transition: all .3s ease;
-}  
+}
+.contacts__subscribe--form--submit:hover {
+	color: #e10011;
+	transition: all .3s ease;
+} 
 /* ---------- .contacts ------  */
 /* ---------- .social ------  */
 .contacts__social {
