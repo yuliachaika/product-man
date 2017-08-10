@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
 
 * {
-	/* background-color: #eeeeee; */
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -18,9 +17,32 @@ a {
 .container {
 	padding: 0 16px;
 	margin: 0 auto;
-	/* margin: 50px auto 0; */
-	max-width: 1230px; 
+	max-width: 1200px; 
 	font-size: 0;
+}
+.header-section {
+	color: #303030;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+    padding: 0 320px;
+}
+.header-section__title {
+	margin: 0;
+	padding-top: 72px;
+	font-size: 48px;
+	font-weight: 900;
+	line-height: 90px;
+}
+.header-section__subtitle {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
 }
  		/* ------.container ------*/
  		
@@ -65,7 +87,7 @@ ul.menu {
 ul.menu li {
 	display: inline-block;
 	padding-right: 40px; 
-	font-family: Roboto;
+	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
 	letter-spacing: 0.025em;
 	font-weight: 400;
@@ -100,7 +122,7 @@ button:hover i {
 /* ------ header ------*/
 
 /* ------ main ------- */
-
+/* ---------- .slider --------  */
 .slider-content {
 	display: inline-block;
 	width: 50%;
@@ -122,7 +144,7 @@ button:hover i {
 h1.title {
 	margin: 0;
 	padding-bottom: 20px;
-	font-family: Raleway;
+	font-family: 'Raleway', sans-serif;
 	color:  #303030;
 	font-size: 150px;
 	font-weight: 900;
@@ -209,6 +231,81 @@ ul.slider-nav li {
 .slider-nav button.active {
 	background-color: #e10011;
 }
+/* ---------- .slider --------  */
+/* ---------- .features ------  */
+.features__container {
+	background-color: #FFF;
+}
+.features__list {
+	padding: 72px;
+}
+.features__item {
+	max-width: 100%;
+	max-height: 60%;
+	opacity: 0;
+}
+.features__item--active {
+	max-width: 100%;
+	max-height: 60%;
+	opacity: 0;
+}
+.features__item--wrap {
+	margin-bottom: 32px;
+	height: 387px;
+	border-radius: 5px;
+}
+.features__item--wrap--first {
+	width: 65%;
+	float: left;
+	background: #eeeeee url("../img/speaker.png") no-repeat left top; 
+}
+.features__item--wrap--second {
+	width: 31%;
+	float: right;
+	margin-left: 32px;
+	background: #eeeeee url("../img/beatsa.png") no-repeat right top;
+}
+.features__item--wrap--third {
+	width: 31%;
+	float: left;
+	margin-right: 31px;
+	background: #eeeeee url("../img/fit.png") no-repeat right bottom;
+}
+.features__item--wrap--hover {
+	display: none;
+	color: #FFF;
+	padding-left: 36px;
+	padding-bottom: 42px;
+	font-family: Roboto;
+	font-size: 30px;
+	font-weight: 900;
+}
+.features__item--hover--underline {
+	padding-bottom: 10px;
+	border-bottom: 5px solid #FFF;
+} 
 
+.features__item--wrap--fourth {
+	width: 31%;
+	float: left;
+	background: #eeeeee url("../img/shoes.png") no-repeat 50% 50%;
+}
+.features__item--wrap--fifth {
+	width: 31%;
+	float: right;
+	margin-left: 32px;
+	background: #eeeeee url("../img/tumblr.png") no-repeat 50% 50%;
+}
+.features__item--wrap--active:hover {
+	background: #e10011;
+	transition: all .3s ease;
+} 
+.features__item--wrap--active:hover  .features__item--wrap--hover{
+	display: block;
+	transition: all .3s ease;
+} 
+
+
+/* ---------- .features ------  */
 
 
