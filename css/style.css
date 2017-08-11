@@ -178,7 +178,6 @@ h1.title {
 }
 a.project {
 	display: block;
-	/* margin-top: 20px; */
 	text-align: right;
 	color: #e10011;
     font-family: 'Roboto', sans-serif;
@@ -197,7 +196,6 @@ a.project {
 }
 .slider-nav {
 	padding: 0;
-/* 	margin-top: 64px; */
 	margin-bottom: 100px;
     list-style: none;
     text-align: center;
@@ -279,7 +277,7 @@ ul.slider-nav li {
 	margin-left: 32px;
 	background: #eeeeee url("../img/tumblr.png") no-repeat 50% 50%;
 }
-.features__item--wrap--hover {
+.features__item--hover {
 	display: none; 
 	position: relative;
 	color: #ffffff;        
@@ -289,11 +287,11 @@ ul.slider-nav li {
 	font-size: 30px;
 	font-weight: 900;
 }
-.features__item--hover--underline {
+.features__item--underline {
 	padding-bottom: 10px;
 	border-bottom: 5px solid #FFF;
 }  
-.features__item--wrap:hover  .features__item--wrap--hover {
+.features__item--wrap:hover  .features__item--hover {
 	display: block;
 	transition: all .5s ease;
 } 
@@ -337,14 +335,11 @@ ul.slider-nav li {
     left: 38px;
 }
 .contacts__subscribe--form--right {
-	/* position: absolute; */
 	position: relative;
 	left: 500px;
     bottom: 70px;
     width: 208px;
     height: 70px;
-   /*  right: 0;
-    bottom: 0; */
     border-radius: 0 35px 35px 0;
     color: #ffffff;
 	font-size: 18px;
@@ -355,17 +350,9 @@ ul.slider-nav li {
     outline: none;
     background-color: #e10011;
 }
-/* .contacts__subscribe--form--submit {
-	color: #ffffff;
-	font-size: 18px;
-	font-weight: 400;
-    position: absolute;
-    top: 45px;
-    right: 30px;
- } */
+
  .contacts__subscribe--form--submit {
  	color: #ffffff;
-    /* display: block; */
     font-size: 18px;
     font-weight: 400;
     position: absolute;
@@ -405,7 +392,7 @@ ul.slider-nav li {
     list-style: none;
     text-align: center;
 }
-.contacts__social__list--item {
+.contacts__social--item {
 	display: inline-block;
 	margin: 0 10px;
 	width: 70px;
@@ -416,7 +403,7 @@ ul.slider-nav li {
 	background-color: #ffffff;
 	
 }
-.contacts__social__list--item--link {
+.contacts__social--link {
 	display: block;
 	color: #979797;
 	font-size: 34px;
@@ -425,11 +412,11 @@ ul.slider-nav li {
 	text-align: center;
 }
 
-.contacts__social__list--item:hover  {
+.contacts__social--item:hover  {
 	background-color: #979797;
 	transition: all .3s ease;
 }
-.contacts__social__list--item:hover .contacts__social__list--item--link {
+.contacts__social--item:hover .contacts__social--link {
 	color: #ffffff;
 	transition: all .3s ease;
 }
@@ -444,10 +431,10 @@ ul.slider-nav li {
 	line-height: 24px;
 	color: #979797;
 }
-.footer__info--link {
+.footer__link {
 	color: #303030;
 }
-.footer__info--link:hover {
+.footer__link:hover {
 	color: #ffffff;
 	transition: all .3s ease;
 }
