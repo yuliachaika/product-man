@@ -226,7 +226,7 @@ ul.slider-nav li {
 	background-color: rgba(48, 48, 48, 0.5);
 	transition: all .3s ease;
 }
-.slider-nav button.active {
+.slider-nav button:active {
 	background-color: #e10011;
 }
 /* ---------- .slider --------  */
